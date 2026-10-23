@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource("1_xvh0c")
-power_type = 5
+power_type = 6
 power = 60
 stamina_cost = 10
 status_chance = 0.5

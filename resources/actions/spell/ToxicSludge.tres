@@ -4,9 +4,8 @@
 
 [resource]
 script = ExtResource("1_jjmn5")
-power = 45
-stamina_cost = 20
-crit_chance = 0.2
-accuracy = 0.85
-status_chance = 0.5
+power = 100
+stamina_cost = 30
+accuracy = 0.6
+status_chance = 0.66
 metadata/_custom_type_script = "uid://crpkqfviqemvh"

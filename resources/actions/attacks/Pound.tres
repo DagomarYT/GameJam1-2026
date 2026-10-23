@@ -4,10 +4,10 @@
 
 [resource]
 script = ExtResource("1_658ke")
-power_type = 5
-power = 40
-stamina_cost = 10
-status_chance = 0.5
+power_type = 7
+power = 60
+stamina_cost = 15
+status_chance = 0.66
 effect = Dictionary[int, int]({
 0: 1
 })

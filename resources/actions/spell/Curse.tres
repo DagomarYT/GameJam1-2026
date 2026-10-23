@@ -4,4 +4,8 @@
 
 [resource]
 script = ExtResource("1_tvdrm")
+power = 0
+stamina_cost = 30
+accuracy = 0.6
+status_chance = 0.66
 metadata/_custom_type_script = "uid://crpkqfviqemvh"
