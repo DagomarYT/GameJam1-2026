@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Spell" format=3 uid="uid://deybil8t7ed0e"]
+
+[ext_resource type="Script" uid="uid://crpkqfviqemvh" path="res://scripts/Spell.gd" id="1_dbane"]
+
+[resource]
+script = ExtResource("1_dbane")
+name = &"Rotten breath"
+power_type = 2
+power = 10
+stamina_cost = 5
+crit_chance = 0.0
+accuracy = 0.55
+status_chance = 1.0
+effect = Dictionary[int, int]({
+3: 2
+})
+metadata/_custom_type_script = "uid://crpkqfviqemvh"

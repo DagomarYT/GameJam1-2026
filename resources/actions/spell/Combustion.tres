@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Spell" format=3 uid="uid://cprosjhphappf"]
+
+[ext_resource type="Script" uid="uid://crpkqfviqemvh" path="res://scripts/Spell.gd" id="1_tv73y"]
+
+[resource]
+script = ExtResource("1_tv73y")
+name = &"Combustion"
+power_type = 0
+power = 100
+stamina_cost = 11
+crit_chance = 0.0
+accuracy = 0.66
+status_chance = 0.66
+effect = Dictionary[int, int]({
+4: 1
+})
+metadata/_custom_type_script = "uid://crpkqfviqemvh"

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Attack" format=3 uid="uid://d8xubekfhn4s"]
+
+[ext_resource type="Script" uid="uid://d4nw1a5u4vq06" path="res://scripts/Attack.gd" id="1_uouxu"]
+
+[resource]
+script = ExtResource("1_uouxu")
+name = &"Slash"
+power_type = 7
+power = 25
+stamina_cost = 3
+crit_chance = 0.5
+accuracy = 0.5
+status_chance = 0.5
+effect = Dictionary[int, int]({
+4: 1
+})
+metadata/_custom_type_script = "uid://d4nw1a5u4vq06"

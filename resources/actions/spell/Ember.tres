@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Spell" format=3 uid="uid://c36vholiyujrd"]
+
+[ext_resource type="Script" uid="uid://crpkqfviqemvh" path="res://scripts/Spell.gd" id="1_rnc1q"]
+
+[resource]
+script = ExtResource("1_rnc1q")
+name = &"Ember"
+power_type = 0
+stamina_cost = 4
+crit_mult = 10.0
+status_chance = 1.0
+effect = Dictionary[int, int]({
+1: 1
+})
+metadata/_custom_type_script = "uid://crpkqfviqemvh"

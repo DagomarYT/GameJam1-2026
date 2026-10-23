@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Spell" format=3 uid="uid://ru3cauvuotis"]
+
+[ext_resource type="Script" uid="uid://crpkqfviqemvh" path="res://scripts/Spell.gd" id="1_2yrwr"]
+
+[resource]
+script = ExtResource("1_2yrwr")
+name = &"Corrosive spit"
+power_type = 2
+power = 10
+stamina_cost = 5
+crit_chance = 0.2
+accuracy = 0.8
+status_chance = 1.0
+effect = Dictionary[int, int]({
+3: 1
+})
+metadata/_custom_type_script = "uid://crpkqfviqemvh"

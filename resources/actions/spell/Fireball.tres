@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Spell" format=3 uid="uid://cp0h4jqyhgynm"]
+
+[ext_resource type="Script" uid="uid://crpkqfviqemvh" path="res://scripts/Spell.gd" id="1_d7xcj"]
+
+[resource]
+script = ExtResource("1_d7xcj")
+name = &"Fireball"
+power_type = 0
+power = 90
+stamina_cost = 11
+crit_chance = 0.05
+accuracy = 0.9
+status_chance = 0.5
+effect = Dictionary[int, int]({
+1: 2
+})
+metadata/_custom_type_script = "uid://crpkqfviqemvh"

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Attack" format=3 uid="uid://3gv8tjjaaaj4"]
+
+[ext_resource type="Script" uid="uid://d4nw1a5u4vq06" path="res://scripts/Attack.gd" id="1_rwxgp"]
+
+[resource]
+script = ExtResource("1_rwxgp")
+name = &"Piercing strike"
+power_type = 6
+power = 50
+stamina_cost = 6
+crit_chance = 0.3
+accuracy = 0.8
+status_chance = 0.5
+metadata/_custom_type_script = "uid://d4nw1a5u4vq06"

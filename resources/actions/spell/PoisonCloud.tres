@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Spell" format=3 uid="uid://di3n0o15wcexv"]
+
+[ext_resource type="Script" uid="uid://crpkqfviqemvh" path="res://scripts/Spell.gd" id="1_tv4sf"]
+
+[resource]
+script = ExtResource("1_tv4sf")
+name = &"Poison cloud"
+power_type = 2
+power = 0
+stamina_cost = 5
+crit_mult = 0.0
+crit_chance = 0.0
+status_chance = 1.0
+effect = Dictionary[int, int]({
+2: 1
+})
+metadata/_custom_type_script = "uid://crpkqfviqemvh"
