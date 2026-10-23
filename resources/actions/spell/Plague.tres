@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Spell" format=3 uid="uid://dfl4wjg23nx18"]
+
+[ext_resource type="Script" uid="uid://crpkqfviqemvh" path="res://scripts/Spell.gd" id="1_g8scm"]
+
+[resource]
+script = ExtResource("1_g8scm")
+power = 0
+stamina_cost = 20
+crit_mult = 0.0
+crit_chance = 0.0
+accuracy = 0.5
+status_chance = 1.0
+metadata/_custom_type_script = "uid://crpkqfviqemvh"
