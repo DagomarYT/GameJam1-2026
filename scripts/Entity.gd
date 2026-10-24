@@ -8,8 +8,7 @@ signal damage_attempted(cause: Resource, _tags: Array[StringName])
 signal damage_received(cause: Resource, amount: int, _tags: Array[StringName])
 signal health_changed(amount: int)
 
-# see EntityData
-#@export var name: String = "Entity"
+@export var name: String = "Entity"
 
 @export var data: EntityData = null :
 	set(x):
@@ -21,6 +20,7 @@ var health: int = max_health :
 	set(x):
 		if x != health: health_changed.emit(x - health)
 		health = x
+		print(str("health: ", health))
 
 @export var tags: Array[StringName] = []
 # Placeholder-ish way to declare special properties.
@@ -108,6 +108,7 @@ func on_dealt_hit(attack: AttackInstance):
 	for effect: Effect in effects: effect.on_host_dealt_hit(attack)
 
 func deal_damage(cause: Resource, amount: int, _tags: Array[StringName]):
+	print("amount: ", amount)
 	#if !_tags.has(&"inert"):
 	for effect: Effect in effects: amount = effect.on_host_receiving_damage(cause, amount, _tags)
 	
@@ -118,3 +119,5 @@ func deal_damage(cause: Resource, amount: int, _tags: Array[StringName]):
 		damage_received.emit(cause, amount, _tags)
 	else:
 		damage_attempted.emit(cause, _tags)
+
+func on_start_action(instance: AttackInstance): pass

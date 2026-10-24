@@ -35,7 +35,7 @@ func _init(_host: Entity, _target: Entity, _action: Action, auto_bake: bool = tr
 	
 	# notify all involved parties of start of an AttackInstance: (attacker > weapon > action > target)
 	host.on_start_action(self)
-	host.weapon.on_start_action(self)
+	# host.weapon.on_start_action(self)
 	action.on_start_used(self)
 	target.on_start_host_is_target(self)
 	

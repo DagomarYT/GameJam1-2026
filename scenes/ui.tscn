@@ -12,9 +12,10 @@ grow_vertical = 2
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=878790249]
 layout_mode = 0
-offset_top = 864.0
+offset_top = 832.0
 offset_right = 1216.0
 offset_bottom = 1080.0
+mouse_filter = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer" unique_id=649973073]
 layout_mode = 2

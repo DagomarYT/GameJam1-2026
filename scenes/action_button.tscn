@@ -1,7 +1,10 @@
 [gd_scene format=3 uid="uid://bi0qgl2ts3fxv"]
 
 [ext_resource type="Texture2D" uid="uid://fodkdfb5swc2" path="res://assets/textures/icon.svg" id="1_js6u8"]
+[ext_resource type="Script" uid="uid://cvpnip7t5n3pa" path="res://scripts/action_button.gd" id="2_u7r83"]
 
 [node name="ActionButton" type="TextureButton" unique_id=1144543486]
+offset_transform_enabled = true
 texture_normal = ExtResource("1_js6u8")
 stretch_mode = 3
+script = ExtResource("2_u7r83")

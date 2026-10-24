@@ -104,7 +104,7 @@ func fetch_info(attack: AttackInstance):
 	attack.damage = power
 	
 	attack.crit_chance += crit_chance
-	attack.crit_damage += crit_mult
+	attack.crit_mult += crit_mult
 	attack.status_chance += status_chance
 	
 	attack.tags = tags.duplicate()

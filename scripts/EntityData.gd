@@ -16,6 +16,7 @@ class_name EntityData
 
 func fetch_data(entity: Entity, meta: bool = true):
 	entity.max_health = max_health
+	entity.health = max_health
 	entity.effects = effects.duplicate(true)
 	
 	entity.actions = actions.duplicate()
