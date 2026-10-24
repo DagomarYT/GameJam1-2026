@@ -5,7 +5,7 @@
 [resource]
 script = ExtResource("1_xvh0c")
 power_type = 6
-power = 61
+power = 60
 stamina_cost = 10
 status_chance = 0.5
 effect = Dictionary[int, int]({
