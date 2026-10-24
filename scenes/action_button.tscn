@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bi0qgl2ts3fxv"]
+
+[ext_resource type="Texture2D" uid="uid://fodkdfb5swc2" path="res://assets/textures/icon.svg" id="1_js6u8"]
+
+[node name="ActionButton" type="TextureButton" unique_id=1144543486]
+texture_normal = ExtResource("1_js6u8")
+stretch_mode = 3

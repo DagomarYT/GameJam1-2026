@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://c5wg8q42nbti3"]
+
+[ext_resource type="PackedScene" uid="uid://bi0qgl2ts3fxv" path="res://scenes/action_button.tscn" id="1_nt7q6"]
+
+[node name="UI" type="Control" unique_id=1310003152]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=878790249]
+layout_mode = 0
+offset_top = 864.0
+offset_right = 1216.0
+offset_bottom = 1080.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer" unique_id=649973073]
+layout_mode = 2
+theme_override_constants/separation = 87
+alignment = 1
+
+[node name="ActionButton" parent="PanelContainer/HBoxContainer" unique_id=1144543486 instance=ExtResource("1_nt7q6")]
+layout_mode = 2
+
+[node name="ActionButton2" parent="PanelContainer/HBoxContainer" unique_id=1223154789 instance=ExtResource("1_nt7q6")]
+layout_mode = 2
+
+[node name="ActionButton3" parent="PanelContainer/HBoxContainer" unique_id=963214166 instance=ExtResource("1_nt7q6")]
+layout_mode = 2
+
+[node name="ActionButton4" parent="PanelContainer/HBoxContainer" unique_id=721615315 instance=ExtResource("1_nt7q6")]
+layout_mode = 2
+
+[node name="ActionButton5" parent="PanelContainer/HBoxContainer" unique_id=723079834 instance=ExtResource("1_nt7q6")]
+layout_mode = 2
