@@ -15,7 +15,9 @@ class_name Player
 @export var attacks: Array[Attack] = [] # Should be (max) 2 (according to held weapons)
 @export var spells: Array[Spell] = [] # For now should be max 3-4, something like that.
 
-func _ready() -> void: Game.player = self
+func _ready() -> void:
+	Game.player = self
+	rand_loadout()
 
 func rand_loadout():
 	pass #TODO: random loadout generator & setup for player
