@@ -5,7 +5,6 @@ signal baked(attack_data: AttackInstance)
 
 signal critical_hit(by: Entity, to: Entity, amount: int)
 
-@export var weapon: Weapon
 @export var action: Action
 
 @export var host: Entity
@@ -21,7 +20,6 @@ signal critical_hit(by: Entity, to: Entity, amount: int)
 var crits: int = -1
 
 @export var status_chance: float = 0.0
-@export var affinities: Dictionary[Affinity, int] = {}
 @export var effects: Array[Effect] = [] :
 	set(x):
 		for effect: Effect in effects:
@@ -33,9 +31,6 @@ func _init(_host: Entity, _target: Entity, _action: Action, auto_bake: bool = tr
 	host = _host
 	target = _target
 	
-	weapon = host.weapon
-	weapon.fetch_info(self) # get weapon stats
-	
 	action = _action
 	action.fetch_info(self) # get action stats
 	
@@ -44,11 +39,6 @@ func _init(_host: Entity, _target: Entity, _action: Action, auto_bake: bool = tr
 	host.weapon.on_start_action(self)
 	action.on_start_used(self)
 	target.on_start_host_is_target(self)
-	
-	for a: Affinity in affinities.keys(): # Affinities
-		var amount: int = affinities[a]
-		if amount > 0: a.on_action_start(self, amount)
-		else: affinities.erase(a)
 	
 	if auto_bake: bake() # bake the attack
 
@@ -108,14 +98,8 @@ func randf_chance(chance: float) -> int:
 
 func bake(): # Final prep
 	host.on_action_bake(self) # Passive effects
-	weapon.on_action_bake(self)
 	action.on_used_bake(self)
 	target.on_is_target_bake(self)
-	
-	for a: Affinity in affinities.keys(): # Affinities
-		var amount: int = affinities[a]
-		if amount > 0: a.on_action_bake(self, amount)
-		else: affinities.erase(a)
 	
 	var crit_amount: int = randf_chance(crit_chance) # Crits
 	if crit_amount:

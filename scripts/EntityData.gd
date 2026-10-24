@@ -3,10 +3,7 @@ class_name EntityData
 
 @export var name: String = "Entity"
 
-@export var max_health: int = 30
-@export var armor: int = 0
-
-@export var weapon: Weapon
+@export var max_health: int = 100
 
 @export var inventory: Array = []
 
@@ -19,7 +16,6 @@ class_name EntityData
 
 func fetch_data(entity: Entity, meta: bool = true):
 	entity.max_health = max_health
-	entity.armor = armor
 	entity.effects = effects.duplicate(true)
 	
 	entity.inventory = inventory.duplicate()
