@@ -14,9 +14,8 @@ signal critical_hit(by: Entity, to: Entity, amount: int)
 @export var damage: int = 0
 @export var target_armor: int = 0
 
-@export var from_AOE: bool = false
 @export var crit_chance: float = 0.0
-@export var crit_damage: float = 0.0
+@export var crit_mult: float = 0.0
 var crits: int = -1
 
 @export var status_chance: float = 0.0
@@ -103,7 +102,7 @@ func bake(): # Final prep
 	
 	var crit_amount: int = randf_chance(crit_chance) # Crits
 	if crit_amount:
-		damage = int(damage * (crit_damage ** crit_amount))
+		damage = int(damage * (crit_mult ** crit_amount))
 		critical_hit.emit(host, target, crit_amount)
 		crits = crit_amount
 	
