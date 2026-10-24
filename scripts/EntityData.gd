@@ -5,7 +5,7 @@ class_name EntityData
 
 @export var max_health: int = 100
 
-@export var inventory: Array = []
+@export var actions: Array[Action] = []
 
 @export var tags: Array[StringName] = []
 
@@ -18,7 +18,7 @@ func fetch_data(entity: Entity, meta: bool = true):
 	entity.max_health = max_health
 	entity.effects = effects.duplicate(true)
 	
-	entity.inventory = inventory.duplicate()
+	entity.actions = actions.duplicate()
 	
 	entity.tags = tags.duplicate()
 	

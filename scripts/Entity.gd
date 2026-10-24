@@ -8,15 +8,16 @@ signal damage_attempted(cause: Resource, _tags: Array[StringName])
 signal damage_received(cause: Resource, amount: int, _tags: Array[StringName])
 signal health_changed(amount: int)
 
-@export var name: String = "Entity"
+# see EntityData
+#@export var name: String = "Entity"
 
 @export var data: EntityData = null :
 	set(x):
 		if !data: x.fetch_data(self)
 		data = x
 
-@export var max_health: int = 30
-@export var health: int = max_health :
+var max_health: int = 30
+var health: int = max_health :
 	set(x):
 		if x != health: health_changed.emit(x - health)
 		health = x
@@ -78,6 +79,7 @@ func remove_effect_type(type: EffectType, manual_array_change: bool = false) -> 
 
 func on_start_turn() -> void:
 	for effect: Effect in effects: effect.on_host_start_turn()
+	
 func on_end_turn() -> void:
 	for effect: Effect in effects: effect.on_host_end_turn()
 

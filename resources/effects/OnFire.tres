@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="EffectType" format=3 uid="uid://cynpewtr51xad"]
+
+[ext_resource type="Script" uid="uid://cageai1nvtebg" path="res://scripts/EffectType.gd" id="1_jd1k5"]
+
+[sub_resource type="GDScript" id="GDScript_0wtne"]
+script/source = "extends Effect
+
+const base_dmg: int = 5
+
+func on_host_start_turn(): host.deal_damage(self, base_dmg, [&\"DOT\"])
+"
+
+[resource]
+script = ExtResource("1_jd1k5")
+name = &"On fire"
+tooltip = "Fire DOT."
+color = Color(1, 0.25, 0, 1)
+effect = SubResource("GDScript_0wtne")
+metadata/_custom_type_script = "uid://cageai1nvtebg"

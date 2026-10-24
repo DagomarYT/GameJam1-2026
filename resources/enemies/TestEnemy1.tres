@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Enemy" format=3 uid="uid://d4lldxctki37f"]
+
+[ext_resource type="Script" uid="uid://1wrqgprp3koj" path="res://scripts/Action.gd" id="1_fwrcl"]
+[ext_resource type="Script" uid="uid://cfmtn4r5yxjfj" path="res://scripts/Effect.gd" id="2_2ak4x"]
+[ext_resource type="Resource" uid="uid://d8xubekfhn4s" path="res://resources/actions/attacks/Uppercut.tres" id="2_k0pbn"]
+[ext_resource type="Script" uid="uid://doqmoff1l03jp" path="res://scripts/EntityData.gd" id="3_2ak4x"]
+[ext_resource type="Resource" uid="uid://31x4s1d6becq" path="res://resources/actions/attacks/Thrust.tres" id="3_d06eh"]
+[ext_resource type="Script" uid="uid://cm57aeo7hkjfl" path="res://scripts/enemy.gd" id="3_svxb8"]
+[ext_resource type="Resource" uid="uid://c7q4w2u31w64a" path="res://resources/actions/spell/MagicBolt.tres" id="4_34gm1"]
+
+[sub_resource type="Resource" id="Resource_hmxl2"]
+script = ExtResource("3_2ak4x")
+actions = Array[ExtResource("1_fwrcl")]([ExtResource("2_k0pbn"), ExtResource("3_d06eh"), ExtResource("4_34gm1")])
+metadata/_custom_type_script = "uid://doqmoff1l03jp"
+
+[resource]
+script = ExtResource("3_svxb8")
+data = SubResource("Resource_hmxl2")
+metadata/_custom_type_script = "uid://cm57aeo7hkjfl"
