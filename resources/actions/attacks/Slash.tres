@@ -1,14 +1,12 @@
 [gd_resource type="Resource" script_class="Attack" format=3 uid="uid://dxqnj3hma1td4"]
 
+[ext_resource type="Script" uid="uid://cfmtn4r5yxjfj" path="res://scripts/Effect.gd" id="1_jprck"]
 [ext_resource type="Script" uid="uid://d4nw1a5u4vq06" path="res://scripts/Attack.gd" id="1_xvh0c"]
 
 [resource]
 script = ExtResource("1_xvh0c")
-power_type = 6
+power_type = 5
 power = 60
-stamina_cost = 10
+stamina_cost = 5
 status_chance = 0.5
-effect = Dictionary[int, int]({
-0: 1
-})
 metadata/_custom_type_script = "uid://d4nw1a5u4vq06"

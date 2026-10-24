@@ -25,7 +25,7 @@ signal effect_removed(effect: Effect)
 @export var crit_chance: float = 0.1
 @export var accuracy: float = 1.0 #TODO
 
-# TODO: custom stack amount per single status chance application
+# TODO: custom status stack amount per single status chance application
 @export var status_chance: float = 0.0
 @export var effects: Array[Effect] = [] :
 	set(x):

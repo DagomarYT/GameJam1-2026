@@ -1,5 +1,4 @@
 extends Resource
-class_name Action
 
 signal info_fetched(attack: AttackInstance)
 
